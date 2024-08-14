@@ -1,0 +1,18 @@
+{
+  "canisters": {
+    "my_canister": {
+      "type": "rust",
+      "main": "src/lib.rs",
+      "build": "cargo build --target wasm32-unknown-unknown --release",
+      "candid": "main.did",
+      "package": "my-canister"
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}

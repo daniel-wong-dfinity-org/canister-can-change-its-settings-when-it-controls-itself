@@ -1,0 +1,12 @@
+[package]
+name = "my-canister"
+version = "0.0.1"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+candid = "0.10"
+ic-cdk = "0.15"
+ic-cdk-macros = "0.15"
